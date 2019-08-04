@@ -1,9 +1,10 @@
+import argparse
 def parse_arguments():
 
     
 
     # Set up the argument parser.
-    parser = ArgumentParser(description='help message of this parser')
+    parser = argparse.ArgumentParser(description='help message of this parser')
     
     choise_list = ['hoge', 'huga']
     parser.add_argument('--method', '-m', type=str, choices=choise_list,
